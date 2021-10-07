@@ -4,17 +4,22 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductComponent } from './components/product.component';
+import { LayoutComponent } from './layout/layout.component';
+
+import { SharedModule } from './shared/shared.module';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    SharedModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
