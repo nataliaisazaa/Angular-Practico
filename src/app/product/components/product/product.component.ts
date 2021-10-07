@@ -16,7 +16,7 @@ import { Product } from '../../../core/models/product.model';
 })
 export class ProductComponent implements OnInit, OnDestroy {
 
-  @Input() product: Product;
+  @Input() product: Product = Input();
   @Output() productClicked: EventEmitter<any> = new EventEmitter();
 
   today = new Date();

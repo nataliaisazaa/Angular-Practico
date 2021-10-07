@@ -9,7 +9,7 @@ import Swiper from 'swiper';
 })
 export class HomeComponent implements OnInit, AfterViewInit {
 
-  mySwiper: Swiper;
+  mySwiper!: Swiper;
 
   constructor() { }
 
