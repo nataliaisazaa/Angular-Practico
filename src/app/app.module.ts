@@ -4,22 +4,27 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LayoutComponent } from './layout/layout.component';
-
-import { SharedModule } from './shared/shared.module';
-import { CoreModule } from './core/core.module';
+import { ProductComponent } from './components/product.component';
+import { CartComponent } from './cart/cart.component';
+import { ExponentialPipe } from './exponential.pipe';
+import { HighlightPipe } from './highlight.pipe';
+import { HighlightDirective } from './directives/highlight/highlight.directive';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutComponent,
+    ProductComponent,
+    CartComponent,
+    ExponentialPipe,
+    HighlightPipe,
+    HighlightDirective,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    SharedModule,
-    CoreModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
